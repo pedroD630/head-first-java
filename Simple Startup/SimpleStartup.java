@@ -17,4 +17,10 @@ public class SimpleStartup {
             }
         }
     }
+
+    public void setLocationCells(int[] cellsLocation){
+        for(int i = 0; i < 3; i + 1){
+            locationCells[i] = cellsLocation[i];
+        }
+    }
 }
