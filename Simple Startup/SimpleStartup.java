@@ -1,9 +1,9 @@
 public class SimpleStartup {
-    private int[] locationCells;
+    private int[] locationCells = new int[3];
     private int numOfHits = 0;
 
     public String checkYourself(int userGuess){
-        for(int i = 0; i < locationCells.length; i + 1){
+        for(int i = 0; i < locationCells.length; i++){
             if(userGuess == locationCells[i]){
                 numOfHits = numOfHits + 1;
 
@@ -12,14 +12,13 @@ public class SimpleStartup {
                 } else {
                     return "hit";
                 }
-            } else {
-                return "miss";
             }
         }
+        return "miss";
     }
 
     public void setLocationCells(int[] cellsLocation){
-        for(int i = 0; i < 3; i + 1){
+        for(int i = 0; i < 3; i++){
             locationCells[i] = cellsLocation[i];
         }
     }
