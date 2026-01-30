@@ -10,6 +10,7 @@ public class SimpleStartup {
             if(userGuess == locationCells[i]){
                 numOfHits++;
                 result = "hit";
+                break;
             }
         }
 
