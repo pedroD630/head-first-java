@@ -3,18 +3,21 @@ public class SimpleStartup {
     private int numOfHits = 0;
 
     public String checkYourself(int userGuess){
+
+        String result = "miss";
+
         for(int i = 0; i < locationCells.length; i++){
             if(userGuess == locationCells[i]){
                 numOfHits++;
 
                 if(numOfHits == 3){
-                    return "kill";
+                    result = "kill";
                 } else {
-                    return "hit";
+                    result = "hit";
                 }
             }
         }
-        return "miss";
+        return result;
     }
 
     public void setLocationCells(int[] cellsLocation){
