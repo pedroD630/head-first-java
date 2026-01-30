@@ -5,7 +5,7 @@ public class SimpleStartup {
     public String checkYourself(int userGuess){
         for(int i = 0; i < locationCells.length; i++){
             if(userGuess == locationCells[i]){
-                numOfHits = numOfHits + 1;
+                numOfHits++;
 
                 if(numOfHits == 3){
                     return "kill";
