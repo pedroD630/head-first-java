@@ -9,13 +9,12 @@ public class SimpleStartup {
         for(int i = 0; i < locationCells.length; i++){
             if(userGuess == locationCells[i]){
                 numOfHits++;
-
-                if(numOfHits == 3){
-                    result = "kill";
-                } else {
-                    result = "hit";
-                }
+                result = "hit";
             }
+        }
+
+        if(numOfHits == 3){
+            result = "kill";
         }
         return result;
     }
