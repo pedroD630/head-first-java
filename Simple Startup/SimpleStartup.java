@@ -21,8 +21,6 @@ public class SimpleStartup {
     }
 
     public void setLocationCells(int[] cellsLocation){
-        for(int i = 0; i < 3; i++){
-            locationCells[i] = cellsLocation[i];
-        }
+        locationCells = cellsLocation;
     }
 }
