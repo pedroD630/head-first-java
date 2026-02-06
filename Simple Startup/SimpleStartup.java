@@ -6,7 +6,7 @@ public class SimpleStartup {
 
         String result = "miss";
 
-        for(int i = 0; i < locationCells.length; i++){
+        for(int cell : locationCells) {
             if(userGuess == locationCells[i]){
                 numOfHits++;
                 result = "hit";
