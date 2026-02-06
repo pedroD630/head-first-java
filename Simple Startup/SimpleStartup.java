@@ -7,7 +7,7 @@ public class SimpleStartup {
         String result = "miss";
 
         for(int cell : locationCells) {
-            if(userGuess == locationCells[i]){
+            if(userGuess == cell){
                 numOfHits++;
                 result = "hit";
                 break;
