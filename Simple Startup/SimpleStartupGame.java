@@ -12,9 +12,10 @@ public class SimpleStartupGame {
         theStartup.setLocationCells(locations);
 
         while (true){
-            int guess = helper.getUserInput("enter a number: ");
+            int guess = helper.getUserInput("enter a number");
 
             String result = theStartup.checkYourself(guess);
+            System.out.println(result);
             numOfGuesses++;
 
             if(result.equals("kill")){
