@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class SimpleStartup {
-    private int[] locationCells = new int[3];
+    private ArrayList<String> locationCells;
     private int numOfHits = 0;
 
-    public String checkYourself(int userGuess){
+    public String checkYourself(String userInput){
 
         String result = "miss";
 
@@ -22,7 +22,7 @@ public class SimpleStartup {
         return result;
     }
 
-    public void setLocationCells(int[] cellsLocation){
+    public void setLocationCells(ArrayList<String> cellsLocation){
         locationCells = cellsLocation;
     }
 }
