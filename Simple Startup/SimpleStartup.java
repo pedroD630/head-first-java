@@ -8,17 +8,7 @@ public class SimpleStartup {
 
         String result = "miss";
 
-        for(int cell : locationCells) {
-            if(userGuess == cell){
-                numOfHits++;
-                result = "hit";
-                break;
-            }
-        }
-
-        if(numOfHits == 3){
-            result = "kill";
-        }
+        int index = locationCells.indexOf(userInput);
         return result;
     }
 
