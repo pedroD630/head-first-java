@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class SimpleStartup {
     private int[] locationCells = new int[3];
     private int numOfHits = 0;
