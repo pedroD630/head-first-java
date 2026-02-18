@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class SimpleStartupGame {
     public static void main(String[] args) {
         int numOfGuesses = 0;
@@ -9,12 +12,18 @@ public class SimpleStartupGame {
         int randomNum = (int) (Math.random() * 5); 
         int[] locations = {randomNum, randomNum + 1, randomNum + 2};
 
-        theStartup.setLocationCells(locations);
+        ArrayList<String> locationsList = new ArrayList<>();
+
+        for (int num : locations) {
+            locationsList.add(String.valueOf(num));
+        }
+
+        theStartup.setLocationCells(locationsList);
 
         while (true){
             int guess = helper.getUserInput("enter a number");
 
-            String result = theStartup.checkYourself(guess);
+            String result = theStartup.checkYourself(String.valueOf(guess));
             System.out.println(result);
             numOfGuesses++;
 
@@ -24,4 +33,4 @@ public class SimpleStartupGame {
             }
         }
     } 
-} 
+}
