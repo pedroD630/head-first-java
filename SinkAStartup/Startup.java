@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Startup {
     private ArrayList<String> locationCells;
+    String name;
 
     public String checkYourself(String userInput){
 
