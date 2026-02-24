@@ -5,7 +5,7 @@ public class StartupBust {
         int numOfGuesses = 0;
 
         GameHelper helper = new GameHelper();
-        SimpleStartup theStartup = new SimpleStartup();
+        Startup theStartup = new Startup();
 
         // declara randomNum e utiliza (int) para fazer um cast, converter double (retorno) para int, cortando parte fracionaria
         int randomNum = (int) (Math.random() * 5); 
