@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Startup {
     private ArrayList<String> locationCells;
-    String name;
+    private String name;
 
     public String checkYourself(String userInput){
 
@@ -23,5 +23,9 @@ public class Startup {
 
     public void setLocationCells(ArrayList<String> cellsLocation){
         locationCells = cellsLocation;
+    }
+
+    public void setName(String name){
+        this.name = name;
     }
 }
