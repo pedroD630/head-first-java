@@ -14,6 +14,7 @@ public class Startup {
 
             if(locationCells.isEmpty()){
                 result = "kill";
+                System.out.println("You sunk " + name + " : (");
             } else {
                 result = "hit";
             }
