@@ -55,33 +55,19 @@ public class StartupBust {
 
         System.out.println(result);
     }
-    /*public static void main(String[] args) {
+
+    public void finishGame() {
+        System.out.println("All startups are dead! Your stock is now worthless");
+        if(numOfGuesses <= 18){
+            System.out.println("It only took you " + numOfGuesses + " guesses.");
+            System.out.println("You got out before your option sank");
+        } else {
+            System.out.println("Took you long enough. " + numOfGuesses + " guesses.");
+            System.out.println("Fish are dancing with your options");
+        }
+    }
+
+    public static void main(String[] args) {
         
-        Startup theStartup = new Startup();
-
-        // declara randomNum e utiliza (int) para fazer um cast, converter double (retorno) para int, cortando parte fracionaria
-        int randomNum = (int) (Math.random() * 5); 
-        int[] locations = {randomNum, randomNum + 1, randomNum + 2};
-
-        ArrayList<String> locationsList = new ArrayList<>();
-
-        for (int num : locations) {
-            locationsList.add(String.valueOf(num));
-        }
-
-        theStartup.setLocationCells(locationsList);
-
-        while (true){
-            int guess = helper.getUserInput("enter a number");
-
-            String result = theStartup.checkYourself(String.valueOf(guess));
-            System.out.println(result);
-            numOfGuesses++;
-
-            if(result.equals("kill")){
-                System.out.println("You took " + numOfGuesses + " guesses");
-                break;
-            }
-        }
-    }*/
+    }
 }
