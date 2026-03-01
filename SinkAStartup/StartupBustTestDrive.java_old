@@ -1,0 +1,24 @@
+public class StartupBustTestDrive {
+    public static void main(String[] args){
+        StartupBust BustTest = new StartupBust();
+
+        // testa método setup game e verifica se as startups estão sendo criadas e posicionadas corretamente
+        BustTest.setUpGame();
+
+        for(Startup startup : BustTest.startups){
+            System.out.print(startup.name + " ");
+            for (String position : startup.locationCells){
+                System.out.print(position + " ");
+            }
+            System.out.println(" ");
+        }
+
+        // testa método checkUserGuess
+        /*
+        DECLARA variável de palpite de teste
+        CHAMA checkUserGuess e passa um palpite errado como argumento
+        CHAMA checkUserGuess e passa um palpite correto para usuário
+        CHAMA checkUserGuess até kill uma startup
+        */
+    }
+}
